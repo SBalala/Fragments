@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/send">
+
+    <fragment
+        android:id="@+id/send"
+        android:name="com.example.myapplication.Fragments.FirstFragment"
+        android:label="FirstFragment"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_send_to_inbox"
+            app:destination="@id/inbox" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inbox"
+        android:name="com.example.myapplication.Fragments.SecondFragment"
+        android:label="SecondFragment"
+        tools:layout="@layout/fragment_second">
+        <argument
+            android:name="string"
+            app:argType="string"
+            android:defaultValue=":-0"/>
+    </fragment>
+    <fragment
+        android:id="@+id/ezio"
+        android:name="com.example.myapplication.Fragments.ThirdFragment"
+        android:label="ThirdFragment"
+        tools:layout="@layout/fragment_third"/>
+    <fragment
+        android:id="@+id/babyYoda"
+        android:name="com.example.myapplication.Fragments.FourthFragment"
+        android:label="FourthFragment"
+        tools:layout="@layout/fragment_fourth"/>
+
+</navigation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/send"
+        android:icon="@drawable/ic_baseline_send_24"
+        android:title="Send Message"/>
+
+    <item
+        android:id="@+id/inbox"
+        android:icon="@drawable/ic_baseline_message_24"
+        android:title="Inbox"/>
+
+    <item
+        android:id="@+id/ezio"
+        android:icon="@drawable/ic_baseline_local_fire_department_24"
+        android:title="Ezio"/>
+
+    <item
+        android:id="@+id/babyYoda"
+        android:icon="@drawable/ic_baseline_star_24"
+        android:title="Mandalorian x Baby Yoda"/>
+
+</menu>
